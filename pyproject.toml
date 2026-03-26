@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "copilot-ad-infinitum"
+version = "0.1.0"
+description = "Autonomous task cycling with GitHub Copilot"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "github-copilot-sdk",
+    "rich",
+    "bpsa",
+]
+
+[project.scripts]
+copilot-ad-infinitum = "copilot_ad_infinitum.cli:main"
