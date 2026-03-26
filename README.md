@@ -1,4 +1,4 @@
-# Copilot Ad-Infinitum
+# Autonomous-Task-Cycling-System
 
 Autonomous task cycling with GitHub Copilot. Loads tasks from a folder of task files (`.md`, `.py`, `.sh`) or a single file and runs them repeatedly using GitHub Copilot with full system access.
 
@@ -110,10 +110,6 @@ from copilot_ad_infinitum.loop import run_loop
 tasks = load_tasks("./tasks/")
 asyncio.run(run_loop(tasks, model_id="gpt-5.4", cycles=3, cooldown=10, inject_folder="/path/to/project"))
 ```
-
-## Security Warning
-
-This tool runs GitHub Copilot autonomously with **full system access** (file read/write, shell execution, URL fetching). Only run inside a securely isolated environment.
 
 ## License
 
